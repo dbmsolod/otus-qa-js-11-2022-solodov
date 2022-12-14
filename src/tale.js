@@ -2,37 +2,45 @@
 // Задание №1
 
 function kolobok(character) {
+    let result;
+
     switch (character) {
         case 'дедушка':
-            console.log('Я от дедушки ушёл');
+            result = 'Я от дедушки ушёл';
             break;
         case 'лиса':
-            console.log('Меня съели');
+            result = 'Меня съели';
             break;
         case 'заяц':
-            console.log('Не хитро ушёл от зайца');
+            result = 'Не хитро ушёл от зайца';
             break;
         default:
-            console.log(`Персонажа "${character}" в сказке нет`);
+            result = `Персонажа "${character}" в сказке нет`;
             break;
     }
+
+    return result;
 }
 
-kolobok('заяц');
-kolobok('лиса');
-kolobok('дедушка');
-kolobok('зять');
+console.log(kolobok('заяц'));
+console.log(kolobok('лиса'));
+console.log(kolobok('дедушка'));
+console.log(kolobok('зять'));
 
 // Задание №2
 
 function newYear(character) {
+    let result;
+
     if (character === 'Дед Мороз' || character === 'Снегурочка') {
-        console.log(`${character}! ${character}! ${character}!`);
+        result = `${character}! ${character}! ${character}!`;
     } else {
-        console.log(`Персонажа "${character}" в сказке нет`);
+        result = `Персонаж "${character}" не найден`;
     }
+
+    return result;
 }
 
-newYear('Дед Мороз');
-newYear('Снегурочка');
-newYear('Карабас-Барабас');
+console.log(newYear('Дед Мороз'));
+console.log(newYear('Снегурочка'));
+console.log(newYear('Карабас-Барабас'));
